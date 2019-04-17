@@ -1,0 +1,24 @@
+{
+  "name": "gridlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanream/GridList.git"
+  },
+  "author": "Ryan Ream",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanream/GridList/issues"
+  },
+  "homepage": "https://github.com/ryanream/GridList#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}

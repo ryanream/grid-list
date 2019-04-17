@@ -1,0 +1,13 @@
+.box {
+    /*border: 1px solid red;*/
+    width: 29%;
+    height: 30%;
+    float: left;
+    margin: 1.66%;
+    border: 2px solid #a1a1a1;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
