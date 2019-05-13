@@ -2,22 +2,23 @@
     <head>
         <link rel="stylesheet" href="/app.css" type="text/css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <h1 id="title">Welcome to GridList</h1>
+        <h1 id="title">GridList v1.0</h1>
     </head>
     <body>
         
+        <input onclick=buttonClick("thisButton") id="thisButton" type="button" class="flipThis box btn btn-outline-info" value="Hello World!"></input>
+        
+        <!--/home receives the objGrid[] from app.js. for each entry in objGrid[], create a button inside a div-->
         <% objGrid.forEach(function(gridItem) { %>
-            <!--print a div/button named with the corresponding objGrid[i].title-->
-            <!--for each gridItem, create a div/button-->
             <div>
                 <button class="flipThis box btn btn-outline-info">
-                    <!--inside each button, create a UL-->
                     
-                        <!--inside the UL, print each item in the gridItem's todos array-->
+                        <!--inside the button, print each item in the gridItem's todos array-->
                         <% gridItem.todos.forEach(function(todo) { %>
                             <p> <%= todo %> </p>
                         <% }) %>
-                    
+                        
+                    <!--at the bottom of the button, print the title of the corresponding object-->
                     <%= gridItem.title %>
                 </button>
             </div>
@@ -33,15 +34,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <!--bootstrap JS-->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
+        <script src="gridList.js"></script>
         <script>
             var elements = document.getElementsByClassName("flipThis");
+            console.log(elements);
             for(var i = 0; i<elements.length; i++){
                 elements[i].addEventListener("click", function(){
-                   console.log(elements[i]);
+                   
                 });
             }
         </script>
+        
+
         
     </body>
 </html>

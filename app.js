@@ -3,9 +3,10 @@ var express     = require("express"),
     
 app.use(express.static(__dirname + "/public"));
     
-    // seed data
+    // seed data - what is this for?
 var grid = ["first entry", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9", "item10", "item11", "last entry",];
 
+    // seed data
 var objGrid = [
         {
             title: "object 1",
