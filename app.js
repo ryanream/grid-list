@@ -30,6 +30,18 @@ var objGrid = [
         {
             title: "object 6",
             todos: ["todo6 #1", "todo6 #2", "todo6 #3"]
+        }, 
+        {
+            title: "object 7",
+            todos: ["todo7 #1", "todo #2", "todo #3"]
+        }, 
+        {
+            title: "object 8",
+            todos: ["todo8 #1", "todo #2", "todo #3"]
+        }, 
+        {
+            title: "object 9",
+            todos: ["todo9 #1", "todo #2", "todo #3"]
         }
     ];
 
